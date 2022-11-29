@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   outline: none;
+  font-size: 16px;
 }
 
 .home-container {
@@ -32,6 +33,7 @@
   flex-direction: column;
 }
 .country-dropdown-values {
+  visibility: hidden;
   background-color: rgba(234, 232, 228, 0.8);
   color: black;
   border-radius: 20px;
@@ -39,6 +41,7 @@
 .country-button {
   border: none;
   padding: 20px;
+  border-radius: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,8 +49,9 @@
   width: 200px;
   align-self: center;
   transition: 0.3s;
+  margin-bottom: 5px;
 }
-.country-value {
+.country-eg {
   border: none;
   padding: 20px;
   display: flex;
@@ -55,12 +59,31 @@
   height: 40px;
   width: 200px;
   align-self: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.country-ae {
+  border: none;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  align-self: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .arrow {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
 }
 .country-button:hover {
+  cursor: pointer;
+}
+.country-eg:hover {
+  cursor: pointer;
+}
+.country-ae:hover {
   cursor: pointer;
 }
 .country-dropdown {
@@ -69,9 +92,14 @@
   flex-direction: column;
 }
 @media (max-width: 479px) {
-  .home-image {
-    align-self: center;
-    margin-top: 0nits;
-    margin-left: 0px;
+  .home-container {
+    align-items: center;
+  }
+  .logo {
+    height: 60px;
+    margin-left: 0;
+  }
+  .home-container-inner {
+    margin-left: 0;
   }
 }

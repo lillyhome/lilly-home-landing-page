@@ -2,9 +2,31 @@
 <html>
   <head>
     <title>Lilly Home</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
     <link href="styles.css" rel="stylesheet" />
   </head>
+
+  <script>
+    window.addEventListener('load', (event) => {
+      let visibility = false;
+      document.getElementById('button').onclick = function () {
+        if (visibility == false) {
+          document.getElementById('dropdown').style.visibility = 'visible';
+          visibility = true;
+        } else if (visibility == true) {
+          document.getElementById('dropdown').style.visibility = 'hidden';
+          visibility = false;
+        }
+      };
+      document.getElementById('eg').onclick = function () {
+        window.location.href = 'https://eg.lilly-home.com';
+      };
+      document.getElementById('ae').onclick = function () {
+        window.location.href = 'https://ae.lilly-home.com';
+      };
+    });
+  </script>
 
   <body>
     <div>
@@ -12,12 +34,12 @@
         <img alt="Lilly Home Logo" src="./assets/logo.png" class="logo" />
         <div class="home-container-inner">
           <div class="country-dropdown">
-            <button type="button" class="country-button">
+            <button type="button" id="button" class="country-button">
               Select Country<img class="arrow" src="./assets/arrow.png" />
             </button>
-            <div class="country-dropdown-values">
-              <button type="button" class="country-value">Egypt</button>
-              <button type="button" class="country-value">
+            <div class="country-dropdown-values" id="dropdown">
+              <button type="button" id="eg" class="country-eg">Egypt</button>
+              <button type="button" id="ae" class="country-ae">
                 United Arab Emirates
               </button>
             </div>
