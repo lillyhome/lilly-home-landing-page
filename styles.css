@@ -40,11 +40,25 @@
   border: none;
   padding: 20px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 40px;
   width: 200px;
   align-self: center;
   transition: 0.3s;
+}
+.country-value {
+  border: none;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  align-self: center;
+}
+.arrow {
+  width: 16px;
+  height: 16px;
 }
 .country-button:hover {
   cursor: pointer;
