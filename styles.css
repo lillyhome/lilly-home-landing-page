@@ -16,11 +16,9 @@
   background-image: url('./assets/background.jpg');
   background-position: center;
 }
-.home-image {
-  width: 300px;
-  height: 91px;
+.logo {
+  height: 60px;
   margin-top: 80px;
-  object-fit: cover;
   margin-left: 80px;
 }
 .home-container1 {
@@ -34,30 +32,42 @@
   justify-content: flex-start;
 }
 .home-select {
+  border: none;
+  padding: 20px;
+  display: flex;
+  background-color: rgba(234, 232, 228, 0.8);
+  opacity: 0;
+  color: black;
+  border-radius: 20px;
+  align-items: center;
   height: 40px;
   transition: 0.3s;
   margin-left: 80px;
   padding-top: 5px;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 5px;
 }
-.home-select:hover {
-  cursor: pointer;
-}
-.home-button {
+
+.country-button {
+  border: none;
+  padding: 20px;
+  display: flex;
+  background-color: rgba(234, 232, 228, 0.8);
+  opacity: 0;
+  color: black;
+  border-radius: 20px;
+  align-items: center;
   height: 40px;
+  width: 200px;
   align-self: center;
   transition: 0.3s;
-  padding-top: 11px;
-  border-radius: 0px;
 }
-.home-button:hover {
-  color: #ffffff;
+.country-button:hover {
   cursor: pointer;
-  background-color: #000000;
+}
+.country-dropdown {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 479px) {
   .home-image {
