@@ -3,13 +3,14 @@
   padding: 0;
   outline: none;
   font-size: 16px;
+  color: black;
 }
 
 .home-container {
   width: 100%;
   display: flex;
   overflow: auto;
-  min-height: 100vh;
+  height: 100vh;
   align-items: flex-start;
   flex-direction: column;
   background-size: cover;
@@ -35,7 +36,6 @@
 .country-dropdown-values {
   visibility: hidden;
   background-color: rgba(234, 232, 228, 0.8);
-  color: black;
   border-radius: 20px;
 }
 .country-button {
