@@ -70,6 +70,15 @@
   height: 40px;
   width: 200px;
   align-self: center;
+}
+.country-sa {
+  border: none;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  align-self: center;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -80,10 +89,9 @@
 .country-button:hover {
   cursor: pointer;
 }
-.country-eg:hover {
-  cursor: pointer;
-}
-.country-ae:hover {
+.country-eg:hover,
+.country-ae:hover,
+.country-sa:hover {
   cursor: pointer;
 }
 .country-dropdown {
